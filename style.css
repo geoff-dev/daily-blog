@@ -15,8 +15,8 @@ html {
 body {
   font-family: 'Space Mono', monospace;
   line-height: 1.6;
-  background: rgba(175, 238, 238, 0.3);
-  color: lightcoral;
+  background: rgba(218, 23, 23, 0.3);
+  color: rgb(61, 78, 236);
   margin: 0 auto;
   padding: 0;
   max-width: 900px;
@@ -51,7 +51,7 @@ button {
   padding: 0.5em 1em;
   border: none;
   background-color: aquamarine;
-  color: #0a2472;
+  color: #10b425;
   font-family: 'Space Mono', monospace;
 }
 
@@ -112,7 +112,7 @@ button[class^='btn-']:hover,
 a[class^='btn-']:hover,
 input[class^='btn-']:hover {
   background-color: lightgoldenrodyellow;
-  color: lightcoral;
+  color: rgb(0, 0, 0);
   font-weight: 700;
   transform: scale(1.08);
 }
@@ -129,7 +129,7 @@ input[class^='btn-']:hover {
   padding: 1em;
   border-radius: 2px;
   border: unset;
-  background-color: lightgoldenrodyellow;
+  background-color: rgb(250, 246, 210);
   font-family: 'Space Mono', monospace;
 }
 
@@ -169,6 +169,14 @@ input[class^='btn-']:hover {
   line-height: 1.6;
   font-size: 1.2rem;
   font-weight: 700;
+}
+
+.entry-label {
+  display: flex;
+  line-height: 1.6;
+  font-size: 2rem;
+  font-weight: 700;
+  justify-content: center;
 }
 
 .entry-text-box {

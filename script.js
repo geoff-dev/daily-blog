@@ -34,7 +34,7 @@ function addEntryToDom(event) {
 
         const heading = document.createElement(`h2`);
         heading.className = `heading-results`;
-        heading.textContent = `Journal Entries`;
+        //heading.textContent = `Journal Entries`;
         entryResultRow.insertAdjacentElement(`beforebegin`, heading)
 
         // Adding Div
