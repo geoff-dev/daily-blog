@@ -246,12 +246,12 @@ input[class^='btn-']:hover {
 }
 
 .single-entry-date {
-  background-color: lightgoldenrodyellow;
+  /* background-color: lightgoldenrodyellow; */
   width: 100%;
 }
 
 .heading-results {
   text-align: center;
   text-decoration: underline;
-  text-decoration-color: lightgoldenrodyellow;
+  /* text-decoration-color: lightgoldenrodyellow; */
 }

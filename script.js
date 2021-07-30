@@ -30,7 +30,8 @@ function addEntryToDom(event) {
         const n = month[d.getMonth()];
         const day = d.getDay();
         const year = d.getFullYear();
-
+        const hour = d.getHours();
+        const minute = d.getMinutes();
 
         const heading = document.createElement(`h2`);
         heading.className = `heading-results`;
@@ -49,17 +50,15 @@ function addEntryToDom(event) {
         entryDiv.appendChild(entryHeading);
 
         // Adding Div Element Date
-
-        const entryDate = document.createElement(`p`);
-        entryDate.className = `single-entry-date`;
+        const entryTimeDate = document.createElement(`p`);
+        entryTimeDate.className = `single-entry-date`;
         // eslint-disable-next-line no-cond-assign
         if ((getEntryTitle[0].value = getEntryTitle[0].value)) {
-                entryDate.textContent = `Date Added: ${day} ${n} ${year}`;
-                entryDiv.appendChild(entryDate);
+                entryTimeDate.textContent = `Date added: ${day} ${n} ${year} Time: ${hour}:${minute}`;
+                entryDiv.appendChild(entryTimeDate);
         }
 
         // Adding Div Element paragraph
-
         const entryParagraph = document.createElement(`p`);
         entryParagraph.className = `single-entry-text`;
         entryParagraph.textContent = getEntryText[0].value;
